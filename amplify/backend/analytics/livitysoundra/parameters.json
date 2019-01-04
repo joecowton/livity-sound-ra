@@ -1,0 +1,11 @@
+{
+    "appName": "livitysoundra",
+    "roleName": "pinpointLambdaRolefecf42c1",
+    "cloudWatchPolicyName": "cloudWatchPolicyfecf42c1",
+    "pinpointPolicyName": "pinpointPolicyfecf42c1",
+    "authPolicyName": "pinpoint_amplify_fecf42c1",
+    "unauthPolicyName": "pinpoint_amplify_fecf42c1",
+    "authRoleName": "livitysoundra-20190104144054-authRole",
+    "unauthRoleName": "livitysoundra-20190104144054-unauthRole",
+    "IAMPrefix": "972642169496"
+}

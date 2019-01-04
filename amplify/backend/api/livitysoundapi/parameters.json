@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "livitysoundapi",
+    "schemaGraphql": "s3://livitysoundra-20190104144054-deployment/amplify-appsync-files/schema.graphql.1546620004253",
+    "ResolverBucket": "livitysoundra-20190104144054-deployment",
+    "ResolverRootKey": "amplify-appsync-files",
+    "DeploymentTimestamp": "1546620004253"
+}

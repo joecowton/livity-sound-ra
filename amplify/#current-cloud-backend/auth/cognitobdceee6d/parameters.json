@@ -1,0 +1,16 @@
+{
+    "identityPoolName": "livitysoundra_identitypool_61cb5757",
+    "allowUnauthenticatedIdentities": true,
+    "thirdPartyAuth": false,
+    "lambdaLogPolicy": "livitysoundra_lambda_log_policy",
+    "openIdLambdaRoleName": "livitysoundra_openid_lambda_role",
+    "openIdRolePolicy": "livitysoundra_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "livitysoundra_openid_lambda_iam_policy",
+    "openIdLogPolicy": "livitysoundra_openid_lambda_log_policy",
+    "authSelections": "identityPoolOnly",
+    "resourceName": "cognitobdceee6d",
+    "unAuthRoleName": "livitysoundra-20190104144054-unauthRole",
+    "authRoleName": "livitysoundra-20190104144054-authRole",
+    "unAuthRoleArn": "arn:aws:iam::972642169496:role/livitysoundra-20190104144054-unauthRole",
+    "authRoleArn": "arn:aws:iam::972642169496:role/livitysoundra-20190104144054-authRole"
+}

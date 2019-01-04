@@ -1,0 +1,20 @@
+{
+    "projectName": "livitysoundra",
+    "projectPath": "/Users/josephcowton/projects/livity-sound-ra",
+    "defaultEditor": "atom",
+    "frontendHandler": {
+        "javascript": "/Users/josephcowton/.nvm/versions/node/v8.9.4/lib/node_modules/@aws-amplify/cli/node_modules/amplify-frontend-javascript"
+    },
+    "javascript": {
+        "framework": "react",
+        "config": {
+            "SourceDir": "src",
+            "DistributionDir": "build",
+            "BuildCommand": "npm run-script build",
+            "StartCommand": "npm run-script start"
+        }
+    },
+    "providers": {
+        "awscloudformation": "/Users/josephcowton/.nvm/versions/node/v8.9.4/lib/node_modules/@aws-amplify/cli/node_modules/amplify-provider-awscloudformation"
+    }
+}

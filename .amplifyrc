@@ -1,0 +1,14 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "livitysoundra-20190104144054-authRole",
+            "UnauthRoleArn": "arn:aws:iam::972642169496:role/livitysoundra-20190104144054-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::972642169496:role/livitysoundra-20190104144054-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "livitysoundra-20190104144054-deployment",
+            "UnauthRoleName": "livitysoundra-20190104144054-unauthRole",
+            "StackName": "livitysoundra-20190104144054",
+            "StackId": "arn:aws:cloudformation:eu-west-1:972642169496:stack/livitysoundra-20190104144054/be25f750-102e-11e9-b62d-0a4e84363f34"
+        }
+    }
+}

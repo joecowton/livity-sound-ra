@@ -1,0 +1,7 @@
+type Release @model {
+  id: ID!
+  artist: String!
+  title: String
+  src: String
+  link: String
+}

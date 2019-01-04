@@ -1,0 +1,120 @@
+type Release {
+  id: ID!
+  artist: String!
+  title: String
+  src: String
+  link: String
+}
+
+enum ModelSortDirection {
+  ASC
+  DESC
+}
+
+type ModelReleaseConnection {
+  items: [Release]
+  nextToken: String
+}
+
+input ModelStringFilterInput {
+  ne: String
+  eq: String
+  le: String
+  lt: String
+  ge: String
+  gt: String
+  contains: String
+  notContains: String
+  between: [String]
+  beginsWith: String
+}
+
+input ModelIDFilterInput {
+  ne: ID
+  eq: ID
+  le: ID
+  lt: ID
+  ge: ID
+  gt: ID
+  contains: ID
+  notContains: ID
+  between: [ID]
+  beginsWith: ID
+}
+
+input ModelIntFilterInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  contains: Int
+  notContains: Int
+  between: [Int]
+}
+
+input ModelFloatFilterInput {
+  ne: Float
+  eq: Float
+  le: Float
+  lt: Float
+  ge: Float
+  gt: Float
+  contains: Float
+  notContains: Float
+  between: [Float]
+}
+
+input ModelBooleanFilterInput {
+  ne: Boolean
+  eq: Boolean
+}
+
+input ModelReleaseFilterInput {
+  id: ModelIDFilterInput
+  artist: ModelStringFilterInput
+  title: ModelStringFilterInput
+  src: ModelStringFilterInput
+  link: ModelStringFilterInput
+  and: [ModelReleaseFilterInput]
+  or: [ModelReleaseFilterInput]
+  not: ModelReleaseFilterInput
+}
+
+type Query {
+  getRelease(id: ID!): Release
+  listReleases(filter: ModelReleaseFilterInput, limit: Int, nextToken: String): ModelReleaseConnection
+}
+
+input CreateReleaseInput {
+  id: ID
+  artist: String!
+  title: String
+  src: String
+  link: String
+}
+
+input UpdateReleaseInput {
+  id: ID!
+  artist: String
+  title: String
+  src: String
+  link: String
+}
+
+input DeleteReleaseInput {
+  id: ID
+}
+
+type Mutation {
+  createRelease(input: CreateReleaseInput!): Release
+  updateRelease(input: UpdateReleaseInput!): Release
+  deleteRelease(input: DeleteReleaseInput!): Release
+}
+
+type Subscription {
+  onCreateRelease: Release @aws_subscribe(mutations: ["createRelease"])
+  onUpdateRelease: Release @aws_subscribe(mutations: ["updateRelease"])
+  onDeleteRelease: Release @aws_subscribe(mutations: ["deleteRelease"])
+}

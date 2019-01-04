@@ -1,0 +1,16 @@
+projects:
+  livitysoundapi:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - src/graphql/*/.js
+    excludes:
+      - amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: javascript
+        generatedFileName: ''
+        docsFilePath: src/graphql
+        graphQLApiId: wip5hkdhb5hf5c6wfzgxqnm4aa
+      endpoints:
+        prod: >-
+          https://eropmr6xmjenrbzi64p53q2pzq.appsync-api.eu-west-1.amazonaws.com/graphql
