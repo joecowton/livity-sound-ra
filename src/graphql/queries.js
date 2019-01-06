@@ -7,7 +7,7 @@ export const getRelease = `query GetRelease($id: ID!) {
     artist
     title
     src
-    link
+    href
   }
 }
 `;
@@ -22,7 +22,7 @@ export const listReleases = `query ListReleases(
       artist
       title
       src
-      link
+      href
     }
     nextToken
   }

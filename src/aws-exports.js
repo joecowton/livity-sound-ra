@@ -8,6 +8,8 @@ const awsmobile =  {
     "aws_appsync_apiKey": "da2-oeylcu5a55aufis5mwcubimhha",
     "aws_cognito_identity_pool_id": "eu-west-1:6302dc37-69d7-4ae2-9d17-230c12fd6f90",
     "aws_cognito_region": "eu-west-1",
+    "aws_user_pools_id": "eu-west-1_YK8EENEyK",
+    "aws_user_pools_web_client_id": "6796ijupbssrvcguiiia314ogb",
     "aws_mobile_analytics_app_id": "df0443df2f154a3aa6c418c8a44abf69",
     "aws_mobile_analytics_app_region": "eu-west-1",
     "aws_content_delivery_bucket": "livitysoundra-20190104161948-hostingbucket",

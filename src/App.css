@@ -30,3 +30,10 @@
     transform: rotate(360deg);
   }
 }
+
+.image:hover {
+    display: block;
+    transition-duration: .2s;
+    transform: translateY(-8px);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}

@@ -2,24 +2,41 @@ import React from "react";
 import { API, graphqlOperation } from "aws-amplify";
 import { createRelease } from "../graphql/mutations";
 
+const extractSrc = embedCode =>
+  embedCode.includes("src")
+    ? embedCode.split("src=")[1].split(/[ >]/)[0]
+    : null;
+
+const extractHref = embedCode =>
+  embedCode.includes("href")
+    ? embedCode.split("href=")[1].split(/[ >]/)[0]
+    : null;
+
 export default class CreateRelease extends React.Component {
-  state = { artist: "", description: "", releases: [] };
+  state = { artist: "", title: "", embedCode: "", releases: [] };
 
   render() {
     return (
       <div style={styles.inputContainer}>
         <input
           name="artist"
-          placeholder="release name"
+          placeholder="artist name"
           onChange={this.onChange}
           value={this.state.artist}
           style={styles.input}
         />
         <input
-          name="description"
-          placeholder="release description"
+          name="title"
+          placeholder="release title"
           onChange={this.onChange}
-          value={this.state.description}
+          value={this.state.title}
+          style={styles.input}
+        />
+        <input
+          name="embedCode"
+          placeholder="embed code"
+          onChange={this.onChange}
+          value={this.state.embedCode}
           style={styles.input}
         />
         <button style={styles.button} onClick={this.createRelease}>
@@ -34,13 +51,19 @@ export default class CreateRelease extends React.Component {
   };
 
   createRelease = async () => {
-    const { artist, description } = this.state;
-    if (artist === "" || description === "") return;
+    const { artist, title, embedCode } = this.state;
+    const src = extractSrc(embedCode);
+    const href = extractHref(embedCode);
+
+    if (artist === "" || title === "" || src === "" || href === "") return;
     try {
-      const release = { artist, description };
+      const release = { artist, title, src, href };
       const releases = [...this.state.releases, release];
-      this.setState({ releases, artist: "", description: "" });
+      this.setState({
+        releases
+      });
       await API.graphql(graphqlOperation(createRelease, { input: release }));
+      this.setState({ artist: "", title: "", embedCode: "" });
       console.log("release successfully created!");
     } catch (err) {
       console.log("error: ", err);

@@ -3,5 +3,5 @@ type Release @model {
   artist: String!
   title: String
   src: String
-  link: String
+  href: String
 }

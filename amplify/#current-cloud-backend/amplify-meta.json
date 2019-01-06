@@ -25,8 +25,8 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/livitysoundra-20190104144054-deployment/amplify-cfn-templates/api/cloudformation-template.json",
 				"logicalId": "apilivitysoundapi"
 			},
-			"lastPushTimeStamp": "2019-01-04T16:41:12.403Z",
-			"lastPushDirHash": "8CfyLmiiRlBoDhrTc81HDLyOLAk="
+			"lastPushTimeStamp": "2019-01-06T14:46:56.901Z",
+			"lastPushDirHash": "WFsBj0KF+SKGoyPw+BiQN3xPQjM="
 		}
 	},
 	"auth": {
@@ -37,12 +37,18 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/livitysoundra-20190104144054-deployment/amplify-cfn-templates/auth/cognitobdceee6d-cloudformation-template.yml",
 				"logicalId": "authcognitobdceee6d"
 			},
-			"lastPushTimeStamp": "2019-01-04T16:41:11.257Z",
+			"lastPushTimeStamp": "2019-01-06T14:46:55.570Z",
 			"output": {
 				"IdentityPoolId": "eu-west-1:6302dc37-69d7-4ae2-9d17-230c12fd6f90",
-				"IdentityPoolName": "livitysoundra_identitypool_61cb5757"
+				"IdentityPoolName": "livitysoundra_identitypool_61cb5757",
+				"AppClientSecret": "129b5uhf6vbmpld9jqcqf4npl4f7h46u41snaoltajg7a5qg4atc",
+				"UserPoolId": "eu-west-1_YK8EENEyK",
+				"AppClientIDWeb": "6796ijupbssrvcguiiia314ogb",
+				"AppClientID": "2qmpml28tj11dm7rahleh069q7",
+				"UserPoolName": "cognitobdceee6d_userpool_af92dada"
 			},
-			"lastPushDirHash": "QPPEwOR4FqL5g448TT8TZWpKsqo="
+			"lastPushDirHash": "22xAnTAK+9sYGEWB0WMf+6pMQgQ=",
+			"[object Object]": {}
 		}
 	},
 	"analytics": {
@@ -53,7 +59,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/livitysoundra-20190104144054-deployment/amplify-cfn-templates/analytics/pinpoint-cloudformation-template.json",
 				"logicalId": "analyticslivitysoundra"
 			},
-			"lastPushTimeStamp": "2019-01-04T16:41:11.261Z",
+			"lastPushTimeStamp": "2019-01-06T14:46:55.574Z",
 			"output": {
 				"appName": "livitysoundra",
 				"Region": "eu-west-1",
@@ -70,7 +76,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/livitysoundra-20190104144054-deployment/amplify-cfn-templates/hosting/template.json",
 				"logicalId": "hostingS3AndCloudFront"
 			},
-			"lastPushTimeStamp": "2019-01-04T16:41:11.267Z",
+			"lastPushTimeStamp": "2019-01-06T14:46:55.577Z",
 			"output": {
 				"S3BucketSecureURL": "https://livitysoundra-20190104161948-hostingbucket.s3.amazonaws.com",
 				"WebsiteURL": "http://livitysoundra-20190104161948-hostingbucket.s3-website-eu-west-1.amazonaws.com",

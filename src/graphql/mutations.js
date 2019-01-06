@@ -7,7 +7,7 @@ export const createRelease = `mutation CreateRelease($input: CreateReleaseInput!
     artist
     title
     src
-    link
+    href
   }
 }
 `;
@@ -17,7 +17,7 @@ export const updateRelease = `mutation UpdateRelease($input: UpdateReleaseInput!
     artist
     title
     src
-    link
+    href
   }
 }
 `;
@@ -27,7 +27,7 @@ export const deleteRelease = `mutation DeleteRelease($input: DeleteReleaseInput!
     artist
     title
     src
-    link
+    href
   }
 }
 `;

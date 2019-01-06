@@ -3,7 +3,7 @@ type Release {
   artist: String!
   title: String
   src: String
-  link: String
+  href: String
 }
 
 enum ModelSortDirection {
@@ -76,7 +76,7 @@ input ModelReleaseFilterInput {
   artist: ModelStringFilterInput
   title: ModelStringFilterInput
   src: ModelStringFilterInput
-  link: ModelStringFilterInput
+  href: ModelStringFilterInput
   and: [ModelReleaseFilterInput]
   or: [ModelReleaseFilterInput]
   not: ModelReleaseFilterInput
@@ -92,7 +92,7 @@ input CreateReleaseInput {
   artist: String!
   title: String
   src: String
-  link: String
+  href: String
 }
 
 input UpdateReleaseInput {
@@ -100,7 +100,7 @@ input UpdateReleaseInput {
   artist: String
   title: String
   src: String
-  link: String
+  href: String
 }
 
 input DeleteReleaseInput {

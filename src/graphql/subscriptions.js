@@ -7,7 +7,7 @@ export const onCreateRelease = `subscription OnCreateRelease {
     artist
     title
     src
-    link
+    href
   }
 }
 `;
@@ -17,7 +17,7 @@ export const onUpdateRelease = `subscription OnUpdateRelease {
     artist
     title
     src
-    link
+    href
   }
 }
 `;
@@ -27,7 +27,7 @@ export const onDeleteRelease = `subscription OnDeleteRelease {
     artist
     title
     src
-    link
+    href
   }
 }
 `;
